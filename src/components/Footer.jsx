@@ -22,7 +22,7 @@ const Footer = () => {
 
       {/* Right Side - Logo */}
       <div className="w-1/3 flex justify-end">
-        <img src={logo} alt="Logo" className="w-24 h-24 md:w-42 md:h-42 mr-10 lg:mr-42" />
+        <img src={logo} alt="Logo" className="w-32 h-32 md:w-42 md:h-42 mr-10 lg:mr-42" />
       </div>
     </footer>
   );
