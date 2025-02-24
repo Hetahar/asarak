@@ -52,13 +52,14 @@ const NavBar = () => {
           </button>
         </li>
         <li>
-          <a
+          <button
             href="#contact"
             className="text-xl hover:text-[#84522F]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {setIsOpen(false); 
+              navigate("/contact")}}
           >
             Ota yhteyttä
-          </a>
+          </button>
         </li>
       </ul>
     </nav>
