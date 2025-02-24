@@ -2,14 +2,16 @@ import { useState } from "react";
 import house from "../assets/nav-house.png";
 import x from "../assets/close.png"; // Close (X) icon
 import menu from "../assets/burger-bar.png"; // Hamburger menu icon
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav id="nav" className="bg-white py-2 px-4 md:px-8 lg:mx-42 flex items-center justify-between relative">
       {/* Logo Section */}
-      <div className="flex items-center">
+      <div className="flex items-center" onClick={() => navigate("/")}>
         <img src={house} alt="house" className="w-12 h-12" />
         <h1 className="text-2xl md:text-3xl font-bold ml-2">ASARAK</h1>
       </div>
@@ -39,13 +41,15 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <a
-            href="#about"
+        <button
+            onClick={() => {
+              navigate("/projects"); // Navigate to /projects
+              setIsOpen(false); // Close menu on mobile
+            }}
             className="text-xl hover:text-[#84522F]"
-            onClick={() => setIsOpen(false)}
           >
             Projektit
-          </a>
+          </button>
         </li>
         <li>
           <a
