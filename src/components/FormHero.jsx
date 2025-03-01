@@ -1,16 +1,16 @@
 const FormHero = ({ handleSubmit }) => {
   return (
-    <div className="relative bg-[#303841] h-full flex flex-col items-center justify-center">
+    <div className="relative bg-[#303841] h-full flex flex-col items-center justify-center z-0">
       {/* Background Text */}
       <h1
         className="hidden md:block absolute text-[200px] font-sans font-normal text-white opacity-20 
-                        tracking-widest left-[-4.58%] top-[-0.7%] w-[70%] leading-[200px]"
+                        tracking-widest left-[-4.58%] top-[-0.7%] w-[70%] leading-[200px] pointer-events-none z-10"
       >
         ota yhteyttä
       </h1>
 
       {/* Content */}
-      <div className="flex flex-col md:flex-row items-center justify-between my-10 w-full max-w-[900px] sm:px-4 lg:px-0">
+      <div className="flex flex-col md:flex-row items-center justify-between my-10 w-full max-w-[900px] sm:px-4 lg:px-0 z-20">
         {/* Heading */}
         <div className="w-full md:w-[17rem] text-center md:text-left">
           <h1

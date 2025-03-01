@@ -6,8 +6,14 @@ import Footer from '../components/Footer';
 import Comparison from '../components/Comparison';
 import PromiseSection from '../components/promise/PromiseSection';
 import FirstInfo from '../components/FirstInfo';
+import { useEffect } from 'react';
 
 function FrontPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Navbar />

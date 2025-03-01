@@ -21,15 +21,20 @@ import img15 from '../assets/before8.png';
 import img16 from '../assets/after8.png';
 import img17 from '../assets/before9.png';
 import img18 from '../assets/after9.png';
+import { useEffect } from 'react';
 
 function ProjectsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Navbar />
       <HeroImg />
       <div id="images" className="my-35">
         <BeforeAfter before={img1} after={img2} className="m-5" />
-        <BeforeAfter before={img3} after={img4} className="m-5"/>
+        <BeforeAfter before={img3} after={img4} className="m-5" />
         <div className="flex justify-center m-5">
           <div className="flex flex-col md:flex-row items-center max-w-[900px] md:mx-auto">
             <img
@@ -44,12 +49,12 @@ function ProjectsPage() {
             />
           </div>
         </div>
-        <BeforeAfter before={img7} after={img8} className="m-5"/>
-        <BeforeAfter before={img9} after={img10} className="m-5"/>
-        <BeforeAfter before={img11} after={img12} className="m-5"/>
-        <BeforeAfter before={img13} after={img14} className="m-5"/>
-        <BeforeAfter before={img15} after={img16} className="m-5"/>
-        <BeforeAfter before={img17} after={img18} className="m-5"/>
+        <BeforeAfter before={img7} after={img8} className="m-5" />
+        <BeforeAfter before={img9} after={img10} className="m-5" />
+        <BeforeAfter before={img11} after={img12} className="m-5" />
+        <BeforeAfter before={img13} after={img14} className="m-5" />
+        <BeforeAfter before={img15} after={img16} className="m-5" />
+        <BeforeAfter before={img17} after={img18} className="m-5" />
       </div>
       <Footer />
     </div>
