@@ -6,7 +6,7 @@ const Kalusteasennukset = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div id="kaluste-asennukset">
       <div className="flex flex-col w-full sm:px-4 lg:px-0">
         <div className="w-full max-w-[900px] mx-auto px-4 md:px-0">
           <h1 className="text-black text-[28px] text-left font-bold my-4">

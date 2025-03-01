@@ -14,7 +14,7 @@ const NavBar = () => {
       className="bg-white py-2 px-4 md:px-8 lg:mx-42 flex items-center justify-between relative"
     >
       {/* Logo Section */}
-      <div className="flex items-center" onClick={() => navigate('/')}>
+      <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
         <img src={house} alt="house" className="w-12 h-12" />
         <h1 className="text-2xl md:text-3xl font-bold ml-2">ASARAK</h1>
       </div>

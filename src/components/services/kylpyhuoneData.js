@@ -12,7 +12,7 @@ const kylpyhuone = {
     },
     {
       h2: 'Laatoitus ammattitaidolla – kaikissa tiloissa, kaikissa kohteissa.',
-      p: 'Asarak Oy toteuttaa laatoitustyöt ammattitaidolla niin sisätiloissa kuin ulkona: kylpyhuoneet, saunat, keittiön välitilat, koko kodin lattiat, eteiset ja paljon muuta. Erikoistumme vaativiin ja erityisiin laatoituskohteisiin',
+      p: 'Asarak Oy toteuttaa laatoitustyöt ammattitaidolla niin sisätiloissa kuin ulkona: kylpyhuoneet, saunat, keittiön välitilat, koko kodin lattiat, eteiset ja paljon muuta. Erikoistumme vaativiin ja erityisiin laatoituskohteisiin.',
     },
   ],
 };

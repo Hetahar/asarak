@@ -12,20 +12,33 @@ import Mikrosementoinnit from '../components/services/Mikrosementoinnit';
 
 function ServicesPage() {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    // Scroll to top if no hash in URL
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    }
+
+    // If there is a hash, scroll smoothly to the section
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100); // Delay to ensure DOM is fully loaded
+      }
+    }
+  }, [location]);
 
   return (
     <div>
       <Navbar />
       <MainHero />
       <div className="flex flex-col items-center justify-center w-full gap-y-12 md:gap-y-28 my-12 md:my-32">
-        <Huoneistoremontit />
-        <RakennusJaRemontointi />
-        <Kylpyhuone />
-        <Kalusteasennukset />
-        <Maalaustyöt />
-        <Mikrosementoinnit />
+        <Huoneistoremontit id="huoneistoremontit" />
+        <RakennusJaRemontointi id="rakennus-ja-remontointi" />
+        <Kylpyhuone id="kylpyhuone" />
+        <Kalusteasennukset id="kaluste-asennukset" />
+        <Maalaustyöt id="maalaustyot" />
+        <Mikrosementoinnit id="mikrosementoinnit" />
       </div>
 
       <Footer />

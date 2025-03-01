@@ -1,7 +1,14 @@
 import React from 'react';
 import arrow from '../../assets/arrow.png';
+import { useNavigate } from 'react-router-dom';
 
-const TypesCard = ({ image, title, description }) => {
+const TypesCard = ({ image, title, description, targetId }) => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate(`/services#${targetId}`);
+  };
+
   return (
     <div className="relative w-full max-w-[420px] h-[420px] overflow-hidden transform transition-transform duration-300 hover:scale-105 shadow-lg">
       {/* Background Image */}
@@ -27,6 +34,7 @@ const TypesCard = ({ image, title, description }) => {
 
       {/* Button with Instant Hover Effect */}
       <button
+        onClick={handleNavigation}
         id="type-button"
         className="absolute bottom-0 right-0 w-[55px] h-[55px] bg-[#303841] flex items-center justify-center transition-colors duration-0 hover:bg-white group cursor-pointer"
       >

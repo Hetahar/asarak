@@ -11,32 +11,42 @@ const squareData = [
     title: 'Huoneistoremontit',
     description:
       'Oli huoneistoremonttiaikeesi pienet tai suuret, toteutamme sen asiakkaan toiveiden mukaan huolella ja laadukkaasti. Tutustu kohteisiimme ja lue lisää.',
+    id: 'huoneistoremontit',
   },
   {
     image: img2,
     title: 'Rakennus- ja remontointipalvelut',
     description:
-      'Toteutamme uuden rakentamisen sekä vanhan saneerauksen aina huolella alusta loppuun. Tutustu kohteisiimme ja lue lisää.'},
+      'Toteutamme uuden rakentamisen sekä vanhan saneerauksen aina huolella alusta loppuun. Tutustu kohteisiimme ja lue lisää.',
+    id: 'rakennus-ja-remontointi',
+  },
   {
     image: img3,
     title: 'Kylpyhuoneremontit ja laatoitustyöt',
     description:
-      'Kylpyhuoneremontit laadukkaasti. Laatoitustyöt myös hankaliin kohteisiin. Tutustu kohteisiimme ja lue lisää.'},
+      'Kylpyhuoneremontit laadukkaasti. Laatoitustyöt myös hankaliin kohteisiin. Tutustu kohteisiimme ja lue lisää.',
+    id: 'kylpyhuone',
+  },
   {
     image: img4,
     title: 'Kalusteasennukset',
     description:
-    'Keittiöasennukset sekä muut kalusteasennukset amamttitaidolla. Tutustu kohteisiimme ja lue lisää.'},
+      'Keittiöasennukset sekä muut kalusteasennukset amamttitaidolla. Tutustu kohteisiimme ja lue lisää.',
+    id: 'kaluste-asennukset',
+  },
   {
     image: img5,
     title: 'Maalaustyöt',
     description:
-      'Maalaustyöt aina piha-aidoista taloyhtiökohteisiin. Alueen parasta maalauspalvelua. Tutustu kohteisiimme ja lue lisää.'},
+      'Maalaustyöt aina piha-aidoista taloyhtiökohteisiin. Alueen parasta maalauspalvelua. Tutustu kohteisiimme ja lue lisää.',
+    id: 'maalaustyot',
+  },
   {
     image: img6,
     title: 'Mikrosementoinnit',
     description:
       'Teemme myös mikrosementointeja! Tutustu kohteisiimme ja lue lisää.',
+    id: 'mikrosementoinnit',
   },
 ];
 

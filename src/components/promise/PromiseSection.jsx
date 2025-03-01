@@ -1,17 +1,31 @@
-import promiseTexts from "./promise-data";
+import data from './promise-data';
 
 const PromiseSection = () => {
   return (
-    <div className="w-full bg-[#3A3A3A] py-8 flex flex-col items-center mt-20">
-      <h2 className="text-white text-[24px] md:text-[32px] font-semibold text-center mx-auto mb-6">
-        {promiseTexts.title}
-      </h2>
-      <div className="w-full max-w-[1129px] flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center gap-6 px-4">
-        {promiseTexts.promises.map((promise, index) => (
-          <div key={index} className="w-full md:w-1/4 text-white text-[16px] md:text-[18px] font-semibold leading-[30px] md:leading-[35px] text-center">
-            <strong>{promise.bold}:</strong> {promise.text}
-          </div>
-        ))}
+    <div className="w-full flex flex-col justify-center py-10 my-22">
+      <div className="mx-4 md:mx-0">
+        <div>
+          <h1 className="text-black font-semibold text-[32px] mb-8 text-center">
+            {data.title}
+          </h1>
+        </div>
+        <div className="max-w-[900px] mx-auto flex flex-wrap justify-center gap-6 px-4">
+          {data.promises.slice(0, 4).map((item, index) => (
+            <section
+              key={index}
+              className="mx-auto py-10 px-4 md:px-0 bg-[#374151] md:w-[420px] md:h-[210px] flex flex-col items-center justify-center text-center rounded-3xl border-l-8 border-[#9F9F9F] transform transition-transform duration-300 hover:scale-105 shadow-lg cursor-pointer"
+            >
+              <div className="mx-auto p-4">
+                <h1 className="text-white text-[18px] text-left font-bold my-2 italic">
+                  {item.bold}
+                </h1>
+                <p className="text-white my-2 text-[18px] text-left font-light">
+                  {item.text}
+                </p>
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
     </div>
   );

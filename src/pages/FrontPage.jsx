@@ -7,9 +7,9 @@ import Comparison from '../components/Comparison';
 import PromiseSection from '../components/promise/PromiseSection';
 import FirstInfo from '../components/FirstInfo';
 import { useEffect } from 'react';
+import FPDivider from '../components/FPDivider';
 
 function FrontPage() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -18,11 +18,15 @@ function FrontPage() {
     <>
       <Navbar />
       <HeroImg />
-      <div className="flex flex-col sm:flex-row justify-center mt-10" id="first-info">
+      <div
+        className="flex flex-col sm:flex-row justify-center mt-10"
+        id="first-info"
+      >
         <FirstInfo />
         <Comparison />
       </div>
       <PromiseSection />
+      <FPDivider />
       {/* Section for Types Cards */}
       <div className="max-w-[900px] mx-auto flex flex-wrap justify-center gap-6 px-4 py-8">
         {squareData.map((item, index) => (
@@ -31,6 +35,7 @@ function FrontPage() {
               image={item.image}
               title={item.title}
               description={item.description}
+              targetId={item.id}
             />
           </div>
         ))}

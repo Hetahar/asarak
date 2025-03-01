@@ -1,5 +1,5 @@
 const promiseTexts = {
-  title: 'Meidän lupauksemme on:',
+  title: 'Meidän lupauksemme ovat:',
   promises: [
     {
       bold: 'Laatu ja tarkkuus',
