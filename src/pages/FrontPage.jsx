@@ -1,5 +1,5 @@
 import HeroImg from '../components/MainHero';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/NavBar';
 import TypesCard from '../components/type/TypesCard';
 import squareData from '../components/type/types-data';
 import Footer from '../components/Footer';
