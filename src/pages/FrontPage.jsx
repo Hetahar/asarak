@@ -5,7 +5,7 @@ import squareData from '../components/type/types-data';
 import Footer from '../components/Footer';
 import Comparison from '../components/Comparison';
 import PromiseSection from '../components/promise/PromiseSection';
-import FirstInfo from '../components/FirstInfo';
+import FirstInfo from '../components/info/FirstInfo';
 import { useEffect } from 'react';
 import FPDivider from '../components/FPDivider';
 
@@ -19,7 +19,7 @@ function FrontPage() {
       <Navbar />
       <HeroImg />
       <div
-        className="flex flex-col sm:flex-row justify-center mt-10"
+        className="flex flex-col sm:flex-row justify-center mt-20"
         id="first-info"
       >
         <FirstInfo />
@@ -28,7 +28,7 @@ function FrontPage() {
       <PromiseSection />
       <FPDivider />
       {/* Section for Types Cards */}
-      <div className="max-w-[900px] mx-auto flex flex-wrap justify-center gap-6 px-4 py-8">
+      <div className="max-w-[900px] mx-auto flex flex-wrap justify-center gap-6 px-4 my-20">
         {squareData.map((item, index) => (
           <div key={index} className="w-full sm:w-[420px]">
             <TypesCard

@@ -8,28 +8,25 @@ const Footer = () => {
       <div className="flex justify-between mx-auto w-full max-w-[900px] px-4 lg:px-0">
         <div>
           <p className="text-sm md:text-base">
-            OTA YHTEYTTÄ <br />
+            <span className="font-semibold">OTA YHTEYTTÄ </span>
             <br />
-            <a href="tel:+1112223333" className="hover:text-gray-400">
-              111 222 3333
+            <br />
+            <a href="tel:+358451120383" className="hover:text-gray-400">
+              045 112 0383
             </a>{' '}
             <br />
-            <a href="mailto:info@asarak.com" className="hover:text-gray-400">
-              info@asarak.com
+            <a href="mailto:aatu@asarak.fi" className="hover:text-gray-400">
+              aatu@asarak.fi
             </a>{' '}
             <br />
             Asarak Oy <br />
-            Y-Tunnus: 1234567-8 <br />
+            Y-Tunnus: 3430841-7 <br />
           </p>
         </div>
 
         {/* Right Side - Logo */}
         <div className="flex justify-end">
-          <img
-            src={logo}
-            alt="Logo"
-            className="w-32 h-32 md:w-42 md:h-42"
-          />
+          <img src={logo} alt="Logo" className="w-32 h-32 md:w-42 md:h-42" />
         </div>
       </div>
     </footer>

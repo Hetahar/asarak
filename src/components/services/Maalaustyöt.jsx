@@ -13,7 +13,6 @@ const Maalaustyöt = () => {
           <p className="my-4">{data.sections[0].p}</p>
           <p className="my-4 font-semibold italic">{data.sections[1].p1}</p>
           <p className="my-4">{data.sections[1].p2}</p>
-          <p className="my-4 font-semibold italic">{data.sections[1].p3}</p>
         </div>
       </div>
       <MaalaustyötPerusteet />

@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import data from './firstInfoData';
 
 const FirstInfo = () => {
   const navigate = useNavigate();
@@ -7,16 +8,12 @@ const FirstInfo = () => {
     <div className="align-center flex flex-col items-center justify-center px-5">
       {/* Myyntilupaus */}
       <div className="w-[250px] font-semibold text-[32px] leading-[48px] text-center text-black mt-4">
-        Rakennustyöt ja remontit
+        {data.title}
       </div>
 
       {/* Asarak Oy description */}
       <div className="w-[396px] h-[175px] text-[18px] leading-[25px] text-center text-black my-4">
-        Asarak Oy on Kuopiolainen rakennusalan asiantuntija, joka tarjoaa
-        monipuolisia ja korkealaatuisia rakennuspalveluja. Meillä on laaja
-        kokemus ja vankka osaaminen eri rakennusprojekteista, oli kyseessä
-        sitten kodin remontointi, uudisrakentaminen tai erikoistuneet
-        rakennustyöt.
+        {data.description}
       </div>
 
       {/* Contact Button */}

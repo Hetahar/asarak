@@ -23,6 +23,9 @@ const kylpyhuoneVaiheet = [
     h1: 'Viimeistelty dokumentaatio',
     p: 'Toimitamme kirjallisen ja valokuvallisen loppuraportin remontista.',
   },
+  {
+    p: 'Tarjoamme avaimet käteen -periaatteella täydellisen toteutuksen kylpyhuoneremonteille:',
+  },
 ];
 
 export default kylpyhuoneVaiheet;

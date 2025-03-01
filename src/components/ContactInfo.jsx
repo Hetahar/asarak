@@ -9,7 +9,7 @@ const ContactInfo = () => {
 
   return (
     <>
-      <div className="flex justify-between max-w-[900px] mx-auto my-30">
+      <div className="flex justify-between max-w-[900px] mx-auto my-8 md:my-30">
         <div className="flex flex-col md:flex-row justify-between w-full max-w-[900px] mx-auto px-4 lg:px-0">
           <div className="my-10 md:my-20">
             <div className="flex flex-col">

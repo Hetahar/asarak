@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 const FPDivider = () => {
   const navigate = useNavigate();
   return (
-    <div className="bg-[#F9F5F1] w-full flex flex-wrap justify-center gap-6 py-15 my-12">
-      <div className="w-full max-w-[1000px] mx-auto flex flex-col md:flex-row justify-between items-center my-10">
+    <div className="bg-[#F9F5F1] w-full flex flex-wrap justify-center gap-6 py-10">
+      <div className="w-full max-w-[1000px] mx-auto flex flex-col md:flex-row justify-between items-center my-10 ">
         <div className="w-full max-w-[700px] px-4">
           <img
             src={img}
@@ -13,7 +13,7 @@ const FPDivider = () => {
             className="w-full transform transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <div className="flex flex-col items-center justify-center text-center w-full max-w-[300px] p8 py-2">
+        <div className="flex flex-col items-center justify-center text-center w-full md:max-w-[300px] p8 py-2">
           <h1 className="font-semibold text-[32px] w-full max-w-[350px] my-2">
             Luotettava kumppani tulevaan projektiisi?
           </h1>

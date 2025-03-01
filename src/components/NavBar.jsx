@@ -14,7 +14,10 @@ const NavBar = () => {
       className="bg-white py-2 px-4 md:px-8 lg:mx-42 flex items-center justify-between relative"
     >
       {/* Logo Section */}
-      <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
+      <div
+        className="flex items-center cursor-pointer"
+        onClick={() => navigate('/')}
+      >
         <img src={house} alt="house" className="w-12 h-12" />
         <h1 className="text-2xl md:text-3xl font-bold ml-2">ASARAK</h1>
       </div>
@@ -34,6 +37,17 @@ const NavBar = () => {
         }`}
         style={{ zIndex: 40 }} // Ensures it appears above content
       >
+        <li className="">
+          <button
+            className="text-xl hover:text-[#84522F]"
+            onClick={() => {
+              setIsOpen(false);
+              navigate('/');
+            }}
+          >
+            Etusivu
+          </button>
+        </li>
         <li>
           <button
             className="text-xl hover:text-[#84522F]"
@@ -43,8 +57,8 @@ const NavBar = () => {
             }}
           >
             Palvelut
-            </button>
-          </li>
+          </button>
+        </li>
         <li>
           <button
             onClick={() => {

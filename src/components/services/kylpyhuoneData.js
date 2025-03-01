@@ -3,7 +3,7 @@ const kylpyhuone = {
   sections: [
     {
       h2: 'Kylpyhuoneremontti- sisältää kaiken suunnittelusta dokumentointiin.',
-      p: 'Kylpyhuoneremontin kokonaisvaltainen toteutus kattaa kaiken tarvittavan. Kun etsit luotettavaa ammattilaista kylpyhuoneremontillesi, valitse Asarak Oy! Tarjoamme avaimet käteen -periaatteella täydellisen toteutuksen kylpyhuoneremonteille:',
+      p: 'Kylpyhuoneremontin kokonaisvaltainen toteutus kattaa kaiken tarvittavan. Kun etsit luotettavaa ammattilaista kylpyhuoneremontillesi, valitse Asarak Oy!',
     },
     {
       p1: 'Suoritamme remontit korkealla laadulla ja luotettavasti, ja päivitämme osaamistamme säännöllisesti, jotta voimme taata asiantuntevan palvelun ja ajantasaiset ratkaisut. Kylpyhuoneremontin jälkeen saat kirjallisen ja valokuvallisen loppuraportin, jossa on kuvattu kaikki työvaiheet. ',
