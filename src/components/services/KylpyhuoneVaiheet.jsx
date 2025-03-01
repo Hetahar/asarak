@@ -2,7 +2,7 @@ import data from './kylpyhuoneVaiheetData';
 
 const KylpyhuoneVaiheet = () => {
   return (
-    <div className="bg-[#F9F5F1] w-full flex flex-wrap justify-center gap-6 py-15">
+    <div className="bg-[#F9F5F1] w-full flex flex-wrap justify-center gap-6 py-15 my-12">
       <div className="max-w-[1200px] mx-auto flex flex-wrap justify-center gap-6">
         {data.slice(0, 6).map((item, index) => (
           <section

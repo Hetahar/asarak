@@ -35,8 +35,7 @@ const NavBar = () => {
         style={{ zIndex: 40 }} // Ensures it appears above content
       >
         <li>
-          <a
-            href="#services"
+          <button
             className="text-xl hover:text-[#84522F]"
             onClick={() => {
               setIsOpen(false);
@@ -44,8 +43,8 @@ const NavBar = () => {
             }}
           >
             Palvelut
-          </a>
-        </li>
+            </button>
+          </li>
         <li>
           <button
             onClick={() => {
