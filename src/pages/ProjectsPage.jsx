@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/NavBar';
 import ProjectHero from '../components/ProjectHero';
 import BeforeAfter from '../components/BeforeAfter';
 import Footer from '../components/Footer';

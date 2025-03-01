@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/NavBar';
 import ServicesHero from '../components/ServicesHero';
 import Footer from '../components/Footer';
 import Huoneistoremontit from '../components/services/Huoneistoremontit';
