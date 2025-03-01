@@ -53,7 +53,6 @@ function ProjectsPage() {
               />
             </div>
           </div>
-          <BeforeAfter before={img7} after={img8} className="m-5" />
           <BeforeAfter before={img9} after={img10} className="m-5" />
           <BeforeAfter before={img11} after={img12} className="m-5" />
           <h2 className="text-[18px] leading-[36px] text-black mt-8 md:mt-24 font-semibold">Kylpyhuoneremontit ja laatoitustyöt</h2>

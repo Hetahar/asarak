@@ -3,7 +3,7 @@ import data from './maalaustyötPerusteetData';
 const MaalaustyötPerusteet = () => {
   return (
     <div className="bg-[#F9F5F1] w-full flex flex-wrap justify-center mt-10">
-      <h1 className="text-black font-semibold text-[24px] text-center py-10">{data.p}</h1>
+      <h1 className="text-black font-semibold text-[24px] text-center py-10 w-[350px] md:w-full">{data.p}</h1>
       <div className="max-w-[900px] mx-auto flex flex-wrap justify-center gap-4 px-4 mb-10">
         {Object.values(data).slice(1, 5).map((text, index) => (
           <section

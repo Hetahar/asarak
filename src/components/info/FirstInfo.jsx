@@ -12,14 +12,14 @@ const FirstInfo = () => {
       </div>
 
       {/* Asarak Oy description */}
-      <div className="w-[396px] h-[175px] text-[18px] leading-[25px] text-center text-black my-4">
+      <div className="max-w-[350px] md:max-w-[396px] md:h-[175px] text-[18px] leading-[25px] text-center text-black my-4">
         {data.description}
       </div>
 
       {/* Contact Button */}
       <button
         onClick={() => navigate('/contact')}
-        className="w-[238px] h-[55px] bg-gradient-to-r from-[#D89F73] to-[#905E35] border-2 border-[#374151] shadow-md rounded-[10px] flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer"
+        className="w-[238px] h-[55px] my-4 bg-gradient-to-r from-[#D89F73] to-[#905E35] border-2 border-[#374151] shadow-md rounded-[10px] flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer"
       >
         <span className="text-black font-open-sans font-bold text-[18px] leading-[25px]">
           Ota yhteyttä

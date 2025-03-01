@@ -19,7 +19,7 @@ function FrontPage() {
       <Navbar />
       <HeroImg />
       <div
-        className="flex flex-col sm:flex-row justify-center mt-20"
+        className="flex flex-col sm:flex-row justify-center mt-10 md:mt-20"
         id="first-info"
       >
         <FirstInfo />
