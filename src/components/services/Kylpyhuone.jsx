@@ -1,6 +1,6 @@
 import KylpyhuoneVaiheet from './KylpyhuoneVaiheet';
 import data from './kylpyhuoneData';
-import img from '../../assets/frame3.png';
+import img from '../../assets/kylpyhuone.png';
 
 const Kylpyhuone = () => {
   return (
