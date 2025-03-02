@@ -2,7 +2,7 @@ const huoneistoremontitText = {
   h1: 'Huoneistoremontit',
   sections: [
     {
-      h2: 'Huoneistoremontit ammattitaitoisesti ja laadukkaasti',
+      h2: 'Huoneistoremontit ammattitaitoisesti ja laadukkaasti.',
       p1: `Asarak Oy toteuttaa huoneistoremontit Kuopion alueella. Palvelemme niin yksityishenkilöitä kuin taloyhtiöitä. Remontoimme huoneistoja omakotitaloissa, kerrostaloissa ja rivitaloissa.`,
       p2: `Tavallisimpia huoneistoremontteja ovat esimerkiksi eteisten, makuuhuoneiden tapetointi, tehosteseinien maalaus ja muut nopeat pintaremontit, joilla saadaan asunnon ilme virkistymään. Koko asunnon pintaremontin toteuttaminen on kätevintä esimerkiksi juuri ostetussa asunnossa ennen muuttoa tai putkiremontin jälkeen.`,
     },

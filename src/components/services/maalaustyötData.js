@@ -8,7 +8,7 @@ const maalaustyötData = {
     {
       h2: 'Miksi valita meidät maalauskumppaniksi Kuopiossa?',
       p1: 'Talon maalaukset hoituvat asiantuntevilta ammattilaisiltamme nopeasti, mutta huolellisesti – aina esivalmisteluista viimeistelyyn saakka.',
-      p2: 'Vastaamme tarjouspyyntöihin viimeistään seuraavana arkipäivänä. Toteutamme työt kiinteähintaisilla urakkasopimuksilla, ja myönnämme kaikille talon maalauksille kolmen vuoden takuun!',
+      p2: 'Vastaamme tarjouspyyntöihin viimeistään seuraavana arkipäivänä. Toteutamme työt kiinteähintaisilla urakkasopimuksilla, ja myönnämme kaikille talon maalauksille kahden (2) vuoden takuun!',
       p3: 'Miksi on tärkeää huolehtia talon maalauksesta oikeaan aikaan?',
     },
   ],
