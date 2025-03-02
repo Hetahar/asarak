@@ -2,7 +2,7 @@ const kylpyhuone = {
   h1: 'Kylpyhuoneremontit ja laatoitustyöt',
   sections: [
     {
-      h2: 'Kylpyhuoneremontti- sisältää kaiken suunnittelusta dokumentointiin.',
+      h2: 'Kylpyhuoneremontti - sisältää kaiken suunnittelusta dokumentointiin.',
       p: 'Kylpyhuoneremontin kokonaisvaltainen toteutus kattaa kaiken tarvittavan. Kun etsit luotettavaa ammattilaista kylpyhuoneremontillesi, valitse Asarak Oy!',
     },
     {
