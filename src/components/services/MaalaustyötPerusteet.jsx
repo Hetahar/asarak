@@ -8,7 +8,7 @@ const MaalaustyötPerusteet = () => {
         {Object.values(data).slice(1, 5).map((text, index) => (
           <section
             key={index}
-            className="mx-auto py-10 px-4 md:px-0 bg-[#374151] md:w-[420px] md:h-[210px] flex flex-col items-center justify-center text-center rounded-3xl border-l-8 border-[#9F9F9F] transform transition-transform duration-300 hover:scale-105 shadow-lg cursor-pointer"
+            className="mx-auto py-10 px-4 md:px-0 bg-[#374151] md:w-[420px] md:h-[210px] flex flex-col items-center justify-center text-center rounded-3xl border-l-8 border-[#9F9F9F] transform transition-transform duration-300 hover:scale-105 shadow-lg"
           >
             <div className="mx-auto p-4">
               <p className="text-white my-2 text-[18px] text-left font-light">{text}</p>
