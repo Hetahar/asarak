@@ -10,7 +10,7 @@ const Huoneistoremontit = () => {
         <h1 className="text-black text-[28px] text-left font-bold my-4">
           {data.h1}
         </h1>
-        <h2 className="text-black text-[18px] text-left font-semibold italic my-4">
+        <h2 className="text-black text-[18px] text-left font-semibold my-4">
           {data.sections[0].h2}
         </h2>
         <p className="my-4">{data.sections[0].p1}</p>
@@ -26,7 +26,7 @@ const Huoneistoremontit = () => {
           />
         </div>
         <div className="flex flex-col items-center justify-center text-center w-full max-w-[500px] px-4 py-2">
-          <h2 className="font-semibold italic w-full max-w-[290px] my-2">
+          <h2 className="font-semibold w-full max-w-[290px] my-2">
             {data.sections[1].h2}
           </h2>
           <p className="w-full max-w-[400px] my-2">{data.sections[1].p}</p>
@@ -41,7 +41,7 @@ const Huoneistoremontit = () => {
         </div>
       </div>
       <div className="w-full max-w-[900px] mx-auto px-4 md:px-0">
-        <h2 className="text-black text-[18px] text-left font-semibold italic my-4">
+        <h2 className="text-black text-[18px] text-left font-semibold my-4">
           {data.sections[2].h2}
         </h2>
         <p className="my-4">{data.sections[2].p1}</p>

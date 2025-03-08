@@ -9,9 +9,9 @@ const Maalaustyöt = () => {
           <h1 className="text-black text-[28px] text-left font-bold my-4">
             {data.h1}
           </h1>
-          <p className="my-4 font-semibold italic">{data.sections[0].h2}</p>
+          <p className="my-4 font-semibold">{data.sections[0].h2}</p>
           <p className="my-4">{data.sections[0].p}</p>
-          <p className="my-4 font-semibold italic">{data.sections[1].p1}</p>
+          <p className="my-4 font-semibold">{data.sections[1].p1}</p>
           <p className="my-4">{data.sections[1].p2}</p>
         </div>
       </div>

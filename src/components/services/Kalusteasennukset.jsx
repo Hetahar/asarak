@@ -18,7 +18,7 @@ const Kalusteasennukset = () => {
 
         <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center my-10">
           <div className="flex flex-col items-center justify-center text-center w-full max-w-[500px] px-4 py-2">
-            <h2 className="font-semibold italic w-full max-w-[350px] my-2">
+            <h2 className="font-semibold w-full max-w-[350px] my-2">
               {data.sections[0].p3}
             </h2>
             <button

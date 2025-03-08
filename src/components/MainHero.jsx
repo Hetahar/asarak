@@ -13,10 +13,10 @@ const MainHero = () => {
           aria-hidden="true"
         />
         <div className="absolute top-7/10 left-10 md:left-50 lg:left-60 xl:left-85 transform -translate-y-1/2 flex flex-col">
-          <h2 className="text-md md:text-lg lg:text-xl xl:text-2xl">
+          <h2 className="text-md md:text-lg lg:text-xl xl:text-2xl text-white">
             ASARAK OY
           </h2>
-          <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-5xl">
+          <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-5xl tracking-wider leading-snug font-light text-white">
             Rakennustyöt ja remontit <br />
             Pohjois-Savon alueella
           </h1>
