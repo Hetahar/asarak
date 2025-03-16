@@ -1,5 +1,5 @@
 import data from './mikrosementoinnitData';
-import img from '../../assets/microcementation.png';
+import img from '../../assets/ms_frame.png';
 import { useNavigate } from 'react-router-dom';
 
 const Mikrosementoinnit = () => {

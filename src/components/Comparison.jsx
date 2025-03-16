@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-import img1 from "../assets/img-slider1.png";
+import img1 from "../assets/IMG_03.png";
 import img2 from "../assets/img-slider2.png";
 
 const Comparison = () => {
