@@ -39,7 +39,7 @@ const NavBar = () => {
       >
         <li className="">
           <button
-            className="text-xl hover:text-[#84522F]"
+            className="text-xl hover:text-[#84522F] cursor-pointer"
             onClick={() => {
               setIsOpen(false);
               navigate('/');
@@ -50,7 +50,7 @@ const NavBar = () => {
         </li>
         <li>
           <button
-            className="text-xl hover:text-[#84522F]"
+            className="text-xl hover:text-[#84522F] cursor-pointer"
             onClick={() => {
               setIsOpen(false);
               navigate('/services');
@@ -65,7 +65,7 @@ const NavBar = () => {
               navigate('/projects'); // Navigate to /projects
               setIsOpen(false); // Close menu on mobile
             }}
-            className="text-xl hover:text-[#84522F]"
+            className="text-xl hover:text-[#84522F] cursor-pointer"
           >
             Projektit
           </button>
@@ -73,7 +73,7 @@ const NavBar = () => {
         <li>
           <button
             href="#contact"
-            className="text-xl hover:text-[#84522F]"
+            className="text-xl hover:text-[#84522F] cursor-pointer"
             onClick={() => {
               setIsOpen(false);
               navigate('/contact');

@@ -9,6 +9,7 @@ import Kylpyhuone from '../components/services/Kylpyhuone';
 import Kalusteasennukset from '../components/services/Kalusteasennukset';
 import Maalaustyöt from '../components/services/Maalaustyöt';
 import Mikrosementoinnit from '../components/services/Mikrosementoinnit';
+import SidebarNavigation from '../components/SidebarNavigation';
 
 function ServicesPage() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function ServicesPage() {
     <div>
       <Navbar />
       <ServicesHero />
+      <SidebarNavigation />
       <div className="flex flex-col items-center justify-center w-full gap-y-12 md:gap-y-10 my-6 md:my-10">
         <Huoneistoremontit id="huoneistoremontit" />
         <RakennusJaRemontointi id="rakennus-ja-remontointi" />

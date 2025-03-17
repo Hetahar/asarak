@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Huoneistoremontit = () => {
   const navigate = useNavigate();
   return (
-    <div id="huoneistoremontit" className="flex flex-col w-full max-w-[1200px] sm:px-4 lg:px-0">
+    <div id="huoneistoremontit" className="flex flex-col w-full max-w-[1080px] sm:px-4 lg:px-0">
       <div className="w-full max-w-[900px] mx-auto px-4 md:px-0">
         <h1 className="text-black text-[28px] text-left font-bold my-4">
           {data.h1}
@@ -17,7 +17,7 @@ const Huoneistoremontit = () => {
         <p className="my-4">{data.sections[0].p2}</p>
       </div>
 
-      <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center my-10">
+      <div className="w-full max-w-[1080px] mx-auto flex flex-col md:flex-row justify-between items-center my-10">
         <div className="w-full max-w-[600px] px-4">
           <img
             src={img}

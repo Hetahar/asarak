@@ -16,7 +16,7 @@ const Mikrosementoinnit = () => {
           <p className="my-4">{data.sections[0].p3}</p>
         </div>
 
-        <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center my-10">
+        <div className="w-full max-w-[1080px] mx-auto flex flex-col md:flex-row justify-between items-center my-10">
           <div className="w-full max-w-[600px] px-4">
             <img
               src={img}

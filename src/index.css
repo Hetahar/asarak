@@ -29,3 +29,13 @@ body {
 p {
   font-family: 'Poppins', sans-serif !important;
 }
+
+
+@layer utilities {
+  @media (min-width: 1020px) and (max-width: 1057px) {
+    .custom-mx-8 {
+      margin-left: 2rem /* 32px */;
+      margin-right: 2rem /* 32px */;
+    }
+  }
+}
