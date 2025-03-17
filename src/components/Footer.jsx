@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from '../assets/asarak-logo.png';
+import { useNavigate } from 'react-router-dom';
+
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className="w-full h-[220px] bg-[#303841] text-white flex items-center">
       {/* Left Side - Contact Information */}
@@ -26,7 +30,7 @@ const Footer = () => {
 
         {/* Right Side - Logo */}
         <div className="flex justify-end">
-          <img src={logo} alt="Logo" className="w-32 h-32 md:w-42 md:h-42" />
+          <img src={logo} alt="Logo" className="w-32 h-32 md:w-42 md:h-42 cursor-pointer" onClick={() => navigate('/')}/>
         </div>
       </div>
     </footer>

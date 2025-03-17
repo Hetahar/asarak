@@ -9,9 +9,7 @@ const FormHero = ({ handleSubmit }) => {
         ota yhteyttä
       </h1>
 
-      {/* Content */}
       <div className="flex flex-col md:flex-row items-center justify-between my-10 w-full max-w-[900px] sm:px-4 lg:px-0 z-20">
-        {/* Heading */}
         <div className="w-full md:w-[17rem] text-center md:text-left">
           <h1
             className="text-white text-[28px] my-10 md:text-[36px] font-bold mt-10 leading-[40px] md:leading-[55px] 
@@ -24,6 +22,8 @@ const FormHero = ({ handleSubmit }) => {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
+          action="https://formspree.io/f/xpwpwyzl"
+          method="POST"
           className="w-[300px] md:w-[430px] flex flex-col"
         >
           <div className="flex flex-col md:flex-row space-x-4">
@@ -31,7 +31,7 @@ const FormHero = ({ handleSubmit }) => {
               <input
                 type="text"
                 id="firstName"
-                name="firstName"
+                name="first-name"
                 placeholder="Etunimi *"
                 required
                 className="border-b-2 border-white focus:outline-none focus:border-gray-300 placeholder-white p-1 my-4 text-white w-[300px] md:w-[205px]"
@@ -41,7 +41,7 @@ const FormHero = ({ handleSubmit }) => {
               <input
                 type="text"
                 id="lastName"
-                name="lastName"
+                name="last-name"
                 placeholder="Sukunimi *"
                 required
                 className="border-b-2 border-white focus:outline-none focus:border-gray-300 placeholder-white p-1 my-4 text-white w-[300px] md:w-[205px]"
@@ -53,7 +53,7 @@ const FormHero = ({ handleSubmit }) => {
               <input
                 type="tel"
                 id="phoneNumber"
-                name="phoneNumber"
+                name="phone-number"
                 placeholder="Puhelinnumero *"
                 required
                 className="border-b-2 border-white focus:outline-none focus:border-gray-300 placeholder-white p-1 my-4 text-white w-[300px] md:w-[205px]"
@@ -83,28 +83,31 @@ const FormHero = ({ handleSubmit }) => {
             <div>
               <select
                 id="projectType"
-                name="projectType"
+                name="project-type"
                 required
                 className="border-b-2 border-white focus:outline-none focus:border-gray-300 text-white bg-transparent w-[300px] md:w-[205px] p-1 my-4"
               >
                 <option value="">Projektin tyyppi</option>
-                <option value="type1" className="text-black">
+                <option value="huoneistoremontit" className="text-black">
                   Huoneistoremontit
                 </option>
-                <option value="type2" className="text-black">
+                <option value="rakennus-ja-remontointi" className="text-black">
                   Rakennus- ja remontointipalvelut
                 </option>
-                <option value="type3" className="text-black">
+                <option value="kylpyhuone-ja-laatoitus" className="text-black">
                   Kylpyhuoneremontit ja laatoitustyöt
                 </option>
-                <option value="type4" className="text-black">
+                <option value="kalusteasennukset" className="text-black">
                   Kalusteasennukset
                 </option>
-                <option value="type5" className="text-black">
+                <option value="maalaustyöt" className="text-black">
                   Maalaustyöt
                 </option>
-                <option value="type6" className="text-black">
+                <option value="mikrosementoinnit" className="text-black">
                   Mikrosementoinnit
+                </option>
+                <option value="muut-palvelut" className="text-black">
+                  Muut palvelut
                 </option>
               </select>
             </div>
@@ -112,10 +115,11 @@ const FormHero = ({ handleSubmit }) => {
           <div>
             <textarea
               id="moreInfo"
-              name="moreInfo"
+              name="more-info"
               placeholder="Lisätietoja"
-              className="border-b-2 border-white focus:outline-none focus:border-gray-300 placeholder-white h-[35px] w-[300px] md:w-[425px] p-1 my-4 mr-4 md:mr-0 text-white"
-            ></textarea>
+              className="border-b-2 border-white focus:outline-none focus:border-gray-300 placeholder-white h-[35px] w-[300px] md:w-[425px] p-1 my-4 mr-4 md:mr-0 text-white 
+             whitespace-nowrap overflow-x-auto overflow-y-hidden resize-none no-scrollbar"
+            />
           </div>
           <button
             type="submit"

@@ -2,7 +2,7 @@ import React from 'react';
 import arrow from '../../assets/arrow.png';
 import { useNavigate } from 'react-router-dom';
 
-const TypesCard = ({ image, title, description, targetId }) => {
+const TypesCard = ({ image, title, description, targetId, alt }) => {
   const navigate = useNavigate();
 
   const handleNavigation = () => {
@@ -10,11 +10,12 @@ const TypesCard = ({ image, title, description, targetId }) => {
   };
 
   return (
-    <div className="relative w-full max-w-[420px] h-[420px] overflow-hidden transform transition-transform duration-300 hover:scale-105 shadow-lg">
+    <div className="relative w-full max-w-[420px] min-w-[320px] h-[420px] overflow-hidden transform transition-transform duration-300 hover:scale-105 shadow-lg">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${image})` }}
+        style={{ backgroundImage: `url(${image})`}}
+        alt={alt}
       />
 
       {/* Overlay */}

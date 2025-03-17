@@ -11,7 +11,7 @@ const ProjectHero = () => {
           alt=""
           aria-hidden="true"
         />
-        <div className="absolute top-10/15 left-10 md:left-50 lg:left-60 xl:left-85 transform -translate-y-1/2 flex flex-col">
+        <div className="absolute top-[48%] left-10 md:left-50 lg:left-60 xl:left-85 transform -translate-y-1/2 flex flex-col">
           <h2 className="text-md md:text-lg lg:text-xl xl:text-2xl">
             ASARAK OY
           </h2>

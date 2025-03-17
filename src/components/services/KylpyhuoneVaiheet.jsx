@@ -12,7 +12,7 @@ const KylpyhuoneVaiheet = () => {
         >
         
             <div className="mx-auto p-4">
-              <h1 className="text-white text-[18px] text-left font-bold my-2 italic">
+              <h1 className="text-white text-[18px] text-left font-bold my-2">
                 {item.h1}
               </h1>
               <p className="text-white my-2 text-[18px] text-left font-light">{item.p}</p>

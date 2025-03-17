@@ -1,29 +1,29 @@
-import React from 'react';
-import Navbar from '../components/NavBar';
-import ProjectHero from '../components/ProjectHero';
-import BeforeAfter from '../components/BeforeAfter';
-import Footer from '../components/Footer';
-import img1 from '../assets/before1.png';
-import img2 from '../assets/after1.png';
-import img3 from '../assets/before2.png';
-import img4 from '../assets/after2.png';
-import img5 from '../assets/before3.png';
-import img6 from '../assets/after3.png';
-import img9 from '../assets/before5.png';
-import img10 from '../assets/after5.png';
-import img11 from '../assets/before6.png';
-import img12 from '../assets/after6.png';
-import img13 from '../assets/before7.png';
-import img14 from '../assets/after7.png';
-import img15 from '../assets/before8.png';
-import img16 from '../assets/after8.png';
-import img17 from '../assets/before9.png';
-import img18 from '../assets/after9.png';
-import img19 from '../assets/kaluste1.png';
-import img20 from '../assets/kaluste2.png';
-import img7 from '../assets/kylppari01.png';
-import img8 from '../assets/kylppari02.png';
-import { useEffect } from 'react';
+import React from "react";
+import Navbar from "../components/NavBar";
+import ProjectHero from "../components/ProjectHero";
+import BeforeAfter from "../components/BeforeAfter";
+import Footer from "../components/Footer";
+import img1 from "../assets/before1.png";
+import img2 from "../assets/after1.png";
+import img3 from "../assets/before2.png";
+import img4 from "../assets/after2.png";
+import img5 from "../assets/before3.png";
+import img6 from "../assets/after3.png";
+import img9 from "../assets/before5.png";
+import img10 from "../assets/after5.png";
+import img11 from "../assets/before6.png";
+import img12 from "../assets/after6.png";
+import img13 from "../assets/before7.png";
+import img14 from "../assets/after7.png";
+import img15 from "../assets/before8.png";
+import img16 from "../assets/after8.png";
+import img17 from "../assets/before9.png";
+import img18 from "../assets/after9.png";
+import img19 from "../assets/kaluste1.png";
+import img20 from "../assets/kaluste2.png";
+import img7 from "../assets/kylppari01.png";
+import img8 from "../assets/kylppari02.png";
+import { useEffect } from "react";
 
 function ProjectsPage() {
   useEffect(() => {
@@ -34,9 +34,11 @@ function ProjectsPage() {
     <div>
       <Navbar />
       <ProjectHero />
-      <div className="max-w-[900px] mx-auto px-4 lg:px-0 mb-32">
+      <div className="max-w-[900px] mx-auto px-4 lg:px-0 mb-20">
         <div id="images">
-          <h2 className="text-[18px] leading-[36px] text-black mt-8 font-semibold">Rakennus- ja remontointipalvelut</h2>
+          <h2 className="text-[18px] leading-[36px] text-black mt-8 font-semibold">
+            Rakennus- ja remontointipalvelut
+          </h2>
           <BeforeAfter before={img1} after={img2} className="m-5" />
           <BeforeAfter before={img3} after={img4} className="m-5" />
           <div className="flex justify-center">
@@ -53,15 +55,60 @@ function ProjectsPage() {
               />
             </div>
           </div>
-          <BeforeAfter before={img9} after={img10} className="m-5" />
-          <BeforeAfter before={img11} after={img12} className="m-5" />
-          <h2 className="text-[18px] leading-[36px] text-black mt-8 md:mt-24 font-semibold">Kylpyhuoneremontit ja laatoitustyöt</h2>
-          <BeforeAfter before={img13} after={img14} className="m-5" />
-          <BeforeAfter before={img15} after={img16} className="m-5" />
-          <BeforeAfter before={img17} after={img18} className="m-5" />
-          <BeforeAfter before={img7} after={img8} className="m-5" />
-          <h2 className="text-[18px] leading-[36px] text-black mt-8 md:mt-24 font-semibold">Kalusteasennukset</h2>
-          <BeforeAfter before={img19} after={img20} className="m-5" />
+          <BeforeAfter
+            before={img9}
+            after={img10}
+            className="m-5"
+            alt="Before and after image"
+          />
+          <BeforeAfter
+            before={img11}
+            after={img12}
+            className="m-5"
+            alt="Before and after image"
+          />
+          <h2
+            className="text-[18px] leading-[36px] text-black mt-8 md:mt-24 font-semibold"
+            alt="Before and after image"
+          >
+            Kylpyhuoneremontit ja laatoitustyöt
+          </h2>
+          <BeforeAfter
+            before={img13}
+            after={img14}
+            className="m-5"
+            alt="Before and after image"
+          />
+          <BeforeAfter
+            before={img15}
+            after={img16}
+            className="m-5"
+            alt="Before and after image"
+          />
+          <BeforeAfter
+            before={img17}
+            after={img18}
+            className="m-5"
+            alt="Before and after image"
+          />
+          <BeforeAfter
+            before={img7}
+            after={img8}
+            className="m-5"
+            alt="Before and after image"
+          />
+          <h2
+            className="text-[18px] leading-[36px] text-black mt-8 md:mt-24 font-semibold"
+            alt="Before and after image"
+          >
+            Kalusteasennukset
+          </h2>
+          <BeforeAfter
+            before={img19}
+            after={img20}
+            className="m-5"
+            alt="Before and after image"
+          />
         </div>
       </div>
       <Footer />

@@ -5,14 +5,14 @@ const FirstInfo = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="align-center flex flex-col items-center justify-center px-5">
+    <div className="flex flex-col items-center justify-center px-5">
       {/* Myyntilupaus */}
-      <div className="w-[250px] font-semibold text-[32px] leading-[48px] text-center text-black mt-4">
+      <div className="w-full max-w-[250px] font-semibold text-[28px] sm:text-[32px] leading-[40px] sm:leading-[48px] text-center text-black mt-4">
         {data.title}
       </div>
 
       {/* Asarak Oy description */}
-      <div className="max-w-[350px] md:max-w-[396px] md:h-[175px] text-[18px] leading-[25px] text-center text-black my-4">
+      <div className="w-full max-w-[350px] md:max-w-[396px] text-[16px] sm:text-[18px] leading-[24px] sm:leading-[25px] text-center text-black my-4">
         {data.description}
       </div>
 

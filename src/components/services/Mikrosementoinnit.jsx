@@ -1,6 +1,6 @@
-import data from './mikrosementoinnitData';
-import img from '../../assets/ms_frame.png';
-import { useNavigate } from 'react-router-dom';
+import data from "./mikrosementoinnitData";
+import img from "../../assets/ms_frame.png";
+import { useNavigate } from "react-router-dom";
 
 const Mikrosementoinnit = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Mikrosementoinnit = () => {
           <div className="w-full max-w-[600px] px-4">
             <img
               src={img}
-              alt="Huoneistoremontit"
+              alt="Mikrosementoinnit"
               className="w-full transform transition-transform duration-300 hover:scale-105"
             />
           </div>
@@ -30,7 +30,7 @@ const Mikrosementoinnit = () => {
               {data.sections[0].p4}
             </h2>
             <button
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate("/contact")}
               className="w-[220px] h-[50px] bg-gradient-to-r from-[#D89F73] to-[#905E35] border-2 border-[#374151] shadow-md rounded-[10px] flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer my-4"
             >
               <span className="text-black text-[18px] font-semibold">

@@ -1,14 +1,12 @@
 import React from "react";
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-import img1 from "../assets/IMG_03.png";
-import img2 from "../assets/img-slider2.png";
 
-const Comparison = () => {
+const Comparison = ({ image1, image2, height, borderRadius }) => {
   return (
-    <div className="w-[100%] h-auto max-w-[420px] lg:w-[30%] mt-10 px-5">
-    <ReactCompareSlider
-    itemOne={<ReactCompareSliderImage src={img2} alt="Image one" />}
-    itemTwo={<ReactCompareSliderImage src={img1} alt="Image two" />}
+    <div className="w-[100%] h-auto max-h-[600px] max-w-[420px] px-5">
+    <ReactCompareSlider style={{ height, borderRadius }}
+    itemOne={<ReactCompareSliderImage src={image2} alt="Image one" />}
+    itemTwo={<ReactCompareSliderImage src={image1} alt="Image two" />}
     />
     </div>
   );

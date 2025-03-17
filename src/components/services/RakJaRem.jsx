@@ -23,7 +23,7 @@ const RakJaRem = () => {
             </h2>
             <p className="w-full max-w-[400px] my-2">{data.sections[1].p}</p>
             <button
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate('/projects')}
               className="w-[220px] h-[50px] bg-gradient-to-r from-[#D89F73] to-[#905E35] border-2 border-[#374151] shadow-md rounded-[10px] flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer my-4"
             >
               <span className="text-black text-[18px] font-semibold">
