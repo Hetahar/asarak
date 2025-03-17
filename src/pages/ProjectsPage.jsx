@@ -32,7 +32,9 @@ function ProjectsPage() {
 
   return (
     <div>
-      <Navbar />
+      <nav className="sticky top-0 z-50 bg-white shadow">
+        <Navbar />
+      </nav>
       <ProjectHero />
       <div className="max-w-[900px] mx-auto px-4 lg:px-0 mb-20">
         <div id="images">

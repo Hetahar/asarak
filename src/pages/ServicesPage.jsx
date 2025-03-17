@@ -31,7 +31,9 @@ function ServicesPage() {
 
   return (
     <div>
-      <Navbar />
+      <nav className="sticky top-0 z-50 bg-white shadow">
+        <Navbar />
+      </nav>
       <ServicesHero />
       {/* Sidebar only visible on large (md+) screens */}
       <div className="hidden lg:block">

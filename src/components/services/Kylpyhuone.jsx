@@ -1,6 +1,6 @@
-import KylpyhuoneVaiheet from './KylpyhuoneVaiheet';
-import data from './kylpyhuoneData';
-import img from '../../assets/kylppari_frame.png';
+import KylpyhuoneVaiheet from "./KylpyhuoneVaiheet";
+import data from "./kylpyhuoneData";
+import img from "../../assets/kylppari_frame.png";
 
 const Kylpyhuone = () => {
   return (
@@ -24,7 +24,11 @@ const Kylpyhuone = () => {
 
       <div className="w-full max-w-[1080px] mx-auto flex flex-col md:flex-row justify-between items-center my-10">
         <div className="w-full max-w-[600px] px-4">
-          <img src={img} alt="Kylpyhuoneremontit" className="w-full transform transition-transform duration-300 hover:scale-105" />
+          <img
+            src={img}
+            alt="Kylpyhuoneremontit"
+            className="w-full transform transition-transform duration-300 hover:scale-105"
+          />
         </div>
         <div className="flex flex-col items-center justify-center text-center w-full max-w-[500px] px-4 py-2">
           <h2 className="font-semibold w-full max-w-[290px] my-2">

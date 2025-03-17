@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router-dom';
-import data from './firstInfoData';
+import { useNavigate } from "react-router-dom";
+import data from "./firstInfoData";
 
 const FirstInfo = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const FirstInfo = () => {
 
       {/* Contact Button */}
       <button
-        onClick={() => navigate('/contact')}
+        onClick={() => navigate("/contact")}
         className="w-[238px] h-[55px] my-4 bg-gradient-to-r from-[#D89F73] to-[#905E35] border-2 border-[#374151] shadow-md rounded-[10px] flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer"
       >
         <span className="text-black font-open-sans font-bold text-[18px] leading-[25px]">

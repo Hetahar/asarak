@@ -33,7 +33,7 @@ const Kalusteasennukset = () => {
           <div className="w-full max-w-[600px] px-4">
             <img
               src={img}
-              alt="Huoneistoremontit"
+              alt="Kalusteasennukset"
               className="w-full transform transition-transform duration-300 hover:scale-105"
             />
           </div>

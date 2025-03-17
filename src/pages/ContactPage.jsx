@@ -12,7 +12,9 @@ function ContactPage() {
 
   return (
     <>
-      <Navbar />
+      <nav className="sticky top-0 z-50 bg-white shadow">
+        <Navbar />
+      </nav>
       <FormHero />
       <ContactInfo />
       <Footer />

@@ -19,7 +19,9 @@ function FrontPage() {
 
   return (
     <>
-      <Navbar />
+      <nav className="sticky top-0 z-50 bg-white shadow">
+        <Navbar />
+      </nav>
       <HeroImg />
       <div
         className="flex flex-col md:flex-row md:items-center md:justify-between mt-10 md:mt-20 max-w-[900px] mx-auto"
@@ -47,6 +49,7 @@ function FrontPage() {
               title={item.title}
               description={item.description}
               targetId={item.id}
+              alt={item.alt}
             />
           </div>
         ))}

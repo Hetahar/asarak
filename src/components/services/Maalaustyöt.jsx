@@ -1,5 +1,5 @@
-import data from './maalaustyötData.js';
-import MaalaustyötPerusteet from './MaalaustyötPerusteet.jsx';
+import data from "./maalaustyötData.js";
+import MaalaustyötPerusteet from "./MaalaustyötPerusteet.jsx";
 
 const Maalaustyöt = () => {
   return (

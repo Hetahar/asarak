@@ -12,8 +12,8 @@ const ContactInfo = () => {
   return (
     <>
       <div className="flex justify-center max-w-[1000px] mx-auto my-8 md:my-20">
-        <div className="flex flex-col sm:flex-row justify-between w-full gap-6 px-4">
-          <div className="flex-1 flex justify-center items-center px-4 md:px-0">
+        <div className="flex flex-col-reverse sm:flex-row justify-between w-full gap-6 px-4">
+          <div className="flex-1 flex justify-center items-center px-4 md:px-0 pb-4 md:pb-0">
             <Comparison
               image1={img2}
               image2={img1}
@@ -25,7 +25,8 @@ const ContactInfo = () => {
             <div className="flex flex-col">
               <h2 className="text-3xl font-bold text-center">ASARAK OY</h2>
               <p className="mt-8 text-center">
-                Aatu Vajanto, <br/>Rakennusinsinööri
+                Aatu Vajanto, <br />
+                Rakennusinsinööri
               </p>
               <a href="tel:+358451120383" className="text-center">
                 📞 045 112 0383
