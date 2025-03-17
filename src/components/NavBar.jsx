@@ -37,7 +37,7 @@ const NavBar = () => {
         >
           <li>
             <button
-              className="text-xl hover:text-[#84522F] cursor-pointer"
+              className="text-xl hover:text-gray-600 cursor-pointer"
               onClick={() => {
                 setIsOpen(false);
                 navigate("/");
@@ -48,7 +48,7 @@ const NavBar = () => {
           </li>
           <li>
             <button
-              className="text-xl hover:text-[#84522F] cursor-pointer"
+              className="text-xl hover:text-gray-600 cursor-pointer"
               onClick={() => {
                 setIsOpen(false);
                 navigate("/services");
@@ -63,14 +63,14 @@ const NavBar = () => {
                 navigate("/projects");
                 setIsOpen(false);
               }}
-              className="text-xl hover:text-[#84522F] cursor-pointer"
+              className="text-xl hover:text-gray-600 cursor-pointer"
             >
               Projektit
             </button>
           </li>
           <li>
             <button
-              className="text-xl hover:text-[#84522F] cursor-pointer"
+              className="text-xl hover:text-gray-600 cursor-pointer"
               onClick={() => {
                 setIsOpen(false);
                 navigate("/contact");
