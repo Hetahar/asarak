@@ -1,17 +1,29 @@
-import React from "react";
-import { useEffect } from "react";
-import Navbar from "../components/NavBar";
-import ServicesHero from "../components/ServicesHero";
-import Footer from "../components/Footer";
-import Huoneistoremontit from "../components/services/Huoneistoremontit";
-import RakennusJaRemontointi from "../components/services/RakJaRem";
-import Kylpyhuone from "../components/services/Kylpyhuone";
-import Kalusteasennukset from "../components/services/Kalusteasennukset";
-import Maalaustyöt from "../components/services/Maalaustyöt";
-import Mikrosementoinnit from "../components/services/Mikrosementoinnit";
-import SidebarNavigation from "../components/SidebarNavigation";
+import React from 'react';
+import { useEffect, useState } from 'react';
+import Navbar from '../components/NavBar';
+import ServicesHero from '../components/ServicesHero';
+import Footer from '../components/Footer';
+import Huoneistoremontit from '../components/services/Huoneistoremontit';
+import RakennusJaRemontointi from '../components/services/RakJaRem';
+import Kylpyhuone from '../components/services/Kylpyhuone';
+import Kalusteasennukset from '../components/services/Kalusteasennukset';
+import Maalaustyöt from '../components/services/Maalaustyöt';
+import Mikrosementoinnit from '../components/services/Mikrosementoinnit';
+import SidebarNavigation from '../components/SidebarNavigation';
+import useScrollDirection from '../components/hooks/useScrollDirection';
 
 function ServicesPage() {
+  const scrollDirection = useScrollDirection();
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    if (scrollDirection === 'up') {
+      setIsSticky(true);
+    } else if (scrollDirection === 'down') {
+      setIsSticky(false);
+    }
+  }, [scrollDirection]);
+
   useEffect(() => {
     //scroll to top if no hash in URL
     if (!location.hash) {
@@ -23,15 +35,18 @@ function ServicesPage() {
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100); //delay to ensure DOM is fully loaded
+          const yOffset = -70;
+          const y =
+            element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }, 100);
       }
     }
   }, [location]);
 
   return (
     <div>
-      <nav className="sticky top-0 z-50 bg-white shadow">
+      <nav className={`z-50 bg-white shadow ${isSticky ? 'sticky top-0' : ''}`}>
         <Navbar />
       </nav>
       <ServicesHero />
