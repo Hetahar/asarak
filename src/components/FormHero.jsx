@@ -1,4 +1,5 @@
 const FormHero = ({ handleSubmit }) => {
+  const VITE_FORM = import.meta.env.VITE_FORM;
   return (
     <div className="relative bg-[#303841] h-full flex flex-col items-center justify-center z-0">
       {/* Background Text */}
@@ -22,7 +23,7 @@ const FormHero = ({ handleSubmit }) => {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          action="https://formspree.io/f/xpwpwyzl"
+          action={`${VITE_FORM}`}
           method="POST"
           className="w-[300px] md:w-[430px] flex flex-col"
         >

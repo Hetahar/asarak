@@ -1,25 +1,37 @@
-import HeroImg from "../components/MainHero";
-import Navbar from "../components/NavBar";
-import TypesCard from "../components/type/TypesCard";
-import squareData from "../components/type/types-data";
-import Footer from "../components/Footer";
-import Comparison from "../components/Comparison";
-import PromiseSection from "../components/promise/PromiseSection";
-import FirstInfo from "../components/info/FirstInfo";
-import { useEffect } from "react";
-import FPDivider from "../components/FPDivider";
+import HeroImg from '../components/MainHero';
+import Navbar from '../components/NavBar';
+import TypesCard from '../components/type/TypesCard';
+import squareData from '../components/type/types-data';
+import Footer from '../components/Footer';
+import Comparison from '../components/Comparison';
+import PromiseSection from '../components/promise/PromiseSection';
+import FirstInfo from '../components/info/FirstInfo';
+import { useEffect, useState } from 'react';
+import FPDivider from '../components/FPDivider';
+import useScrollDirection from '../components/hooks/useScrollDirection';
 
-import img1 from "../assets/IMG_03.png";
-import img2 from "../assets/img-slider2.png";
+import img1 from '../assets/IMG_03.png';
+import img2 from '../assets/img-slider2.png';
 
 function FrontPage() {
+  const scrollDirection = useScrollDirection();
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    if (scrollDirection === 'up') {
+      setIsSticky(true);
+    } else if (scrollDirection === 'down') {
+      setIsSticky(false);
+    }
+  }, [scrollDirection]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-white shadow">
+      <nav className={`z-50 bg-white shadow ${isSticky ? 'sticky top-0' : ''}`}>
         <Navbar />
       </nav>
       <HeroImg />
