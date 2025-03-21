@@ -35,8 +35,6 @@ function FrontPage() {
         </div>
       </div>
 
-      <PromiseSection />
-      <FPDivider />
       {/* Section for Types Cards */}
       <div className="max-w-[900px] mx-auto flex flex-wrap justify-center gap-6 sm:px-4 my-20">
         {squareData.map((item, index) => (
@@ -54,6 +52,8 @@ function FrontPage() {
           </div>
         ))}
       </div>
+      <FPDivider />
+      <PromiseSection />
 
       <Footer />
     </>

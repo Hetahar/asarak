@@ -5,7 +5,7 @@ const FirstInfo = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center px-5">
+    <div className="flex flex-col items-center justify-center px-5 my-10">
       {/* Myyntilupaus */}
       <div className="w-full max-w-[250px] font-semibold text-[28px] sm:text-[32px] leading-[40px] sm:leading-[48px] text-center text-black mt-4">
         {data.title}

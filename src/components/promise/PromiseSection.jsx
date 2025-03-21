@@ -2,7 +2,7 @@ import data from './promise-data';
 
 const PromiseSection = () => {
   return (
-    <div className="w-full flex flex-col justify-center my-20">
+    <div className="w-full flex flex-col justify-center mb-20 mt-15">
       <div className="mx-4 md:mx-0">
         <div>
           <h1 className="text-black font-semibold text-[32px] mb-8 text-center">
